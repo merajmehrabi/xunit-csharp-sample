@@ -12,9 +12,10 @@ Clone the repository and open it with Visual Studio.
 
 1. In Visual Studio, right-click on the solution in the Solution Explorer.
 2. Choose "Add" > "New Project..."
-3. In the "Add a new project" window, search for "xUnit Test Project" and select "xUnit Test Project (.NET Core)".
+3. In the "Add a new project" window, search for "xUnit Test Project" and select "xUnit Test Project (C#)".
 4. Click "Next" and give your test project a name, e.g., "myAPI.Tests".
-5. Choose a location for your test project, and click "Create".
+5. Choose a location for your test project, and click "Next".
+6. Select the right Framework version, and click "Create"
 
 Now, you should have a new xUnit test project added to your solution.
 
@@ -43,10 +44,9 @@ To install or verify these packages, follow these steps:
 
 ### Step 4: Write a test for the NumberChecker class
 
-In the "myAPI.Tests" project, create a new class called NumberCheckerTests. We will write a test method for the IsEven method in the NumberChecker class.
+In the "myAPI.Tests" project, create a new class called NumberCheckerTests. (Or you can just rename the existing UnitTest1 class) We will write a test method for the IsEven method in the NumberChecker class.
 
 ```c#
-using Xunit;
 using myAPI;
 
 namespace myAPI.Tests
@@ -83,6 +83,8 @@ Now that we have a test method in place, let's run the tests.
 3. Click on the "Run All Tests" button (the double play button icon) or right-click on the "myAPI.Tests" project and choose "Run Tests".
 
 Visual Studio will build the solution and run the tests. You should see the test results in the "Test Explorer" pane. If everything is set up correctly, your test should pass.
+
+##### *The **test** branch of current repo already have the test project ready!*
 
 ### Conclusion
 In this tutorial, we demonstrated how to add an xUnit test project to an existing C# application using Visual Studio. We created a test for the NumberChecker class's IsEven method and ran the test successfully. This approach will enable you and your team to write and run unit tests for your application, improving its reliability and maintainability.
