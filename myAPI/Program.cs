@@ -45,7 +45,7 @@ app.MapGet("/iseven/{id}", (int id) =>
 app.Run();
 
 // NumberChecker class
-class NumberChecker
+public class NumberChecker
 {
     public bool IsEven(int number)
     {
